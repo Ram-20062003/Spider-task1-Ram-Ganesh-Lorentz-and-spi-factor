@@ -1,0 +1,2 @@
+rootProject.name = "Spider task 1"
+include ':app'

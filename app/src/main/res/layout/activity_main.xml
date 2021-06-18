@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="359dp"
+        android:layout_height="284dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="349dp"
+        android:background="@drawable/styling">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/styling"
+            android:text="Calculate"
+            app:backgroundTint="@color/purple_700" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="97dp"
+            android:background="@drawable/stylingedit"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="242dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="152dp"
+            android:background="@drawable/stylingedit"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:shadowColor="#E31A1A" />
+
+        <TextView
+            android:id="@+id/Statement"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="167dp"
+            android:layout_marginRight="167dp"
+            android:layout_marginBottom="157dp"
+            android:text="Speed"
+            android:textColor="#E60B0B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="92dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="87dp"
+            android:text="Lorentz-  factor"
+            android:textColor="#DD0707"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/textstyling"
+            android:gravity="center_horizontal"
+            android:text="LORENTZ FACTOR CALCULATOR"
+            android:textColor="#050505"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/practice"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="135dp"
+        android:shadowColor="#0223F8"
+        android:text="PRACTICE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#1808F1"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#B1FA06"
+        app:rippleColor="#130E0E" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="430dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="-337dp"
+        android:layout_marginRight="-337dp"
+        android:layout_marginBottom="161dp"
+        android:layout_toStartOf="@+id/practice"
+        android:layout_toLeftOf="@+id/practice"
+        android:paddingLeft="150px"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="427dp"
+        android:layout_marginBottom="100dp"
+        android:background="#1603F4D8" />
+
+</RelativeLayout>
