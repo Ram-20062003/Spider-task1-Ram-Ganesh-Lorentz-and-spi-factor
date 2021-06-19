@@ -34,12 +34,12 @@ public class homejava extends AppCompatActivity implements AdapterView.OnItemCli
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if(position==0)
         {
-            Intent intent=new Intent(this,MainActivity.class);
+            Intent intent=new Intent(homejava.this,MainActivity.class);
             startActivity(intent);
         }
         if(position==1)
         {
-            Intent intent1=new Intent(this,calcspi.class);
+            Intent intent1=new Intent(homejava.this,calcspi.class);
             startActivity(intent1);
         }
         if(position==2)

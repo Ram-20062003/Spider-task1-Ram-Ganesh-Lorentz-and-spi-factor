@@ -18,14 +18,14 @@ public class calcspi extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.spi);
-            be=(Button)findViewById(R.id.exitapp) ;
-            mbh=(Button)findViewById(R.id.golorentz);
-            rb=(Button)findViewById(R.id.resume);
+        be=(Button)findViewById(R.id.exitapp) ;
+        mbh=(Button)findViewById(R.id.golorentz);
+        rb=(Button)findViewById(R.id.resume);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         spifactor();
         mbh.setOnClickListener(this);
         rb.setOnClickListener(this);
-            be.setOnClickListener(this);
+        be.setOnClickListener(this);
 
     }
     public void spifactor(){
@@ -55,7 +55,7 @@ public class calcspi extends AppCompatActivity implements View.OnClickListener {
     private int factorial(int th) {
         int i,p=1;
         for(i=1;i<=th;i++)
-          p=p*i;
+            p=p*i;
         return p;
     }
     public void getspi()
@@ -85,13 +85,13 @@ public class calcspi extends AppCompatActivity implements View.OnClickListener {
                 rb.setVisibility(v.VISIBLE);
                 break;
             case R.id.resume:
-                 e=0;
-                 rb.setVisibility(v.INVISIBLE);
-                 spifactor();
-                 break;
+                e=0;
+                rb.setVisibility(v.INVISIBLE);
+                spifactor();
+                break;
             case R.id.exitapp:
-                Intent intent=new Intent(calcspi.this,homejava.class);
-                startActivity(intent);
+                System.exit(0);
+                break;
         }
     }
 }
