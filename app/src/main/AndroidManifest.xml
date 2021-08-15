@@ -10,11 +10,11 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpiderTask1">
-        <activity android:name=".MainActivity" android:parentActivityName=".homejava">
+        <activity android:name=".MainActivity" android:parentActivityName=".homejava" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".practicesession" android:parentActivityName=".MainActivity"> </activity>
-        <activity android:name=".calcspi" android:parentActivityName=".homejava"> </activity>
-        <activity android:name=".homejava">
+        <activity android:name=".practicesession" android:parentActivityName=".MainActivity" android:screenOrientation="portrait"> </activity>
+        <activity android:name=".calcspi" android:parentActivityName=".homejava" android:theme="@style/Theme.Notheme" android:screenOrientation="portrait"> </activity>
+        <activity android:name=".homejava" android:theme="@style/Theme.Notheme" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

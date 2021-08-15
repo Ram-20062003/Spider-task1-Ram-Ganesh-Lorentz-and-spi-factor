@@ -1,6 +1,8 @@
 package com.example.spidertask1;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -21,7 +23,9 @@ public class calcspi extends AppCompatActivity implements View.OnClickListener {
         be=(Button)findViewById(R.id.exitapp) ;
         mbh=(Button)findViewById(R.id.golorentz);
         rb=(Button)findViewById(R.id.resume);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#c9f7ff"));
+        }
         spifactor();
         mbh.setOnClickListener(this);
         rb.setOnClickListener(this);

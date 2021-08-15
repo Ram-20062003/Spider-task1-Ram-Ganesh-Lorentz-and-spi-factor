@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFDFD"
+    android:background="#b1bafa"
     tools:context=".MainActivity"
     android:fitsSystemWindows="true">
 
@@ -29,7 +29,7 @@
         <Button
             android:id="@+id/button"
             android:layout_width="236dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
@@ -47,17 +47,19 @@
         <TextView
             android:id="@+id/answer"
             android:layout_width="242dp"
-            android:layout_height="wrap_content"
+            android:layout_height="34dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/petrona"
             android:layout_marginBottom="97dp"
             android:background="@drawable/stylingedit"
             android:gravity="center"
             android:text=""
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/input"
@@ -71,9 +73,11 @@
             android:layout_marginBottom="152dp"
             android:background="@drawable/stylingedit"
             android:ems="10"
+            android:fontFamily="@font/petrona"
             android:gravity="center"
             android:inputType="numberDecimal"
-            android:shadowColor="#E31A1A" />
+            android:shadowColor="#E31A1A"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/Statement"
@@ -152,24 +156,10 @@
         android:layout_marginBottom="201dp"
         android:layout_toStartOf="@+id/practice"
         android:layout_toLeftOf="@+id/practice"
+        android:fontFamily="@font/amaranth"
         android:paddingLeft="150px"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="157dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="427dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="100dp"
-        android:background="#1603F4D8" />
 </RelativeLayout>
